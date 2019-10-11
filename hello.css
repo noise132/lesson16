@@ -1,0 +1,74 @@
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+
+.card-wrapper {
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner {
+	display: flex;
+	align-items: center; 
+	justify-content: space-evenly; 
+	width: 1180px;
+	height: 260px;
+	background: #BBEAA6;
+	border-radius: 8px;
+	perspective: 2000px;
+}
+
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	font-size: 6.25rem;
+	font-family: 'Roboto', sans-serif;
+	color: #ED9A73;
+	background: #E3C878;
+	border-radius: 8px;
+
+	backface-visibility: hidden;
+	transform-origin: 100% 0%;
+	transform-style: preserve-3d;
+	animation: helloFlips 1s ease-out alternate;
+}
+
+
+@keyframes helloFlips {
+	0% {
+		animation: alternate;
+		transform: rotateX(-90deg);
+	}
+	
+	100% {
+		animation: alternate;
+		transform: rotateX(0deg);
+	}
+}
+
+
+
+
+/*.card:nth-child(1) { 
+	animation-delay: 0.01s 
+}
+.card:nth-child(2) { 
+	animation-delay: 0.2s 
+}
+.card:nth-child(3) { 
+	animation-delay: 0.4s 
+}
+.card:nth-child(4) { 
+	animation-delay: 0.6s 
+}
+.card:nth-child(5) { 
+	animation-delay: 0.8s 
+}*/
